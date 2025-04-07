@@ -7,9 +7,9 @@ members = [
 
 [workspace.dependencies]
 tracing = "0.1"
-bevy_ecs = "0.15"
-bevy_app = "0.15"
-bevy_core = "0.15"
+bevy_ecs = { git = "https://github.com/MrGVSV/bevy.git", branch = "mrgvsv/reflect/serializable-dynamic-types" }
+bevy_app = { git = "https://github.com/MrGVSV/bevy.git", branch = "mrgvsv/reflect/serializable-dynamic-types" }
+bevy_core = { git = "https://github.com/MrGVSV/bevy.git", branch = "mrgvsv/reflect/serializable-dynamic-types" }
 
 # proc macro
 bevy-trait-query-impl = { version = "0.7.0", path = "./bevy-trait-query-impl" }
@@ -20,4 +20,4 @@ proc-macro-crate = "3"
 
 # dev deps
 criterion = "0.5"
-bevy = { version = "0.15", default-features = false }
+bevy = { git = "https://github.com/MrGVSV/bevy.git", branch = "mrgvsv/reflect/serializable-dynamic-types", default-features = false }
